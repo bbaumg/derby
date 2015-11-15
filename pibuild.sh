@@ -8,7 +8,7 @@
 #Variables
 log="/var/log/pibuild.log"
 v_repo='https://raw.githubusercontent.com/bbaumg/derby/master'
-v_defaultapps="python-pip python-dev vim git-core locate build-essential scons swig htop"
+v_defaultapps="python-pip python-dev python-smbus i2c-tools vim git-core locate build-essential scons swig htop"
 v_gitEmail='bbaumg@gmail.com'
 v_gitUser='Barrett'
 
@@ -55,6 +55,9 @@ echo -en "\n-------------------------------------------------------\nInstall Aut
 cd $HOME
 git clone https://github.com/bbaumg/derby.git
 #sudo bash automation/install.sh
+
+echo -en "\n-------------------------------------------------------\nRemove Install File\n\n" | tee -a $log
+cd $HOME
 sudo rm -f pibuild.sh
 
 echo -en "\n-------------------------------------------------------\nBuild Complete\n\n" | tee -a $log
