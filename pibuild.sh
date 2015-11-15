@@ -30,7 +30,7 @@ sed -i --follow-symlinks '/alias ll/d' .bashrc
 sed -i --follow-symlinks '/export EDITOR/d' .bashrc
 echo -en "\n# Some stuff I added\n"\
 "alias ll='ls -alh'\n"\
-"export EDITOR=vim\n"\
+"export EDITOR=vim\n" >> .bashrc
 
 echo -en "\n-------------------------------------------------------\nSettup MOTD\n\n" | tee -a $log
 curl "$v_repo/kickstart/banner" > /etc/banner
