@@ -8,7 +8,7 @@
 #Variables
 log="/var/log/pibuild.log"
 v_repo='https://raw.githubusercontent.com/bbaumg/derby/master'
-v_defaultapps="python-pip python-dev python-smbus i2c-tools vim git-core locate build-essential scons swig htop"
+v_defaultapps="python-pip python-dev python-smbus python-imaging i2c-tools vim git-core locate build-essential scons swig htop"
 v_gitEmail='bbaumg@gmail.com'
 v_gitUser='Barrett'
 
@@ -45,10 +45,8 @@ git config --global user.name "$v_gitUser"
 
 echo -en "\n-------------------------------------------------------\nInstall Dependencies\n\n" | tee -a $log
 cd $HOME
-git clone https://github.com/jgarff/rpi_ws281x.git
-cd rpi_ws281x
-scons
-cd python
+git clone https://github.com/adafruit/Adafruit_Python_LED_Backpack.git
+cd Adafruit_Python_LED_Backpack
 sudo python setup.py install
 
 echo -en "\n-------------------------------------------------------\nInstall Automation\n\n" | tee -a $log
