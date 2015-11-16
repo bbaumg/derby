@@ -2,7 +2,7 @@
 
 # Instructions:
 # Run the two below commands on the pi for the pinewood derby app.
-# curl "https://raw.githubusercontent.com/bbaumg/derby/master/pibuild.sh" > build.sh
+# curl "https://raw.githubusercontent.com/bbaumg/derby/master/build.sh" > build.sh
 # sudo bash build.sh
 
 #Variables
@@ -58,6 +58,6 @@ git clone https://github.com/bbaumg/derby.git
 
 echo -en "\n-------------------------------------------------------\nRemove Install File\n\n" | tee -a $log
 cd $HOME
-sudo rm -f pibuild.sh
+sudo rm -f build.sh
 
 echo -en "\n-------------------------------------------------------\nBuild Complete\n\n" | tee -a $log
