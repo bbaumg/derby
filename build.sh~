@@ -49,10 +49,10 @@ git clone https://github.com/adafruit/Adafruit_Python_LED_Backpack.git
 cd Adafruit_Python_LED_Backpack
 sudo python setup.py install
 
-echo -en "\n-------------------------------------------------------\nInstall Derby\n\n" | tee -a $log
+echo -en "\n-------------------------------------------------------\nInstall Automation\n\n" | tee -a $log
 cd $HOME
 git clone https://github.com/bbaumg/derby.git
-#sudo bash derby/install.sh
+#sudo bash automation/install.sh
 
 echo -en "\n-------------------------------------------------------\nRemove Install File\n\n" | tee -a $log
 cd $HOME
