@@ -3,7 +3,7 @@
 # Instructions:
 # Run the two below commands on the pi for the pinewood derby app.
 # curl "https://raw.githubusercontent.com/bbaumg/derby/master/install.sh" > install.sh
-# sudo bash build.sh
+# sudo bash install.sh
 
 #Variables
 log="/var/log/pibuild.log"
