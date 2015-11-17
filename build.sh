@@ -43,12 +43,6 @@ cd $HOME
 git config --global user.email "$v_gitEmail"
 git config --global user.name "$v_gitUser"
 
-echo -en "\n-------------------------------------------------------\nInstall Dependencies\n\n" | tee -a $log
-cd $HOME
-git clone https://github.com/adafruit/Adafruit_Python_LED_Backpack.git
-cd Adafruit_Python_LED_Backpack
-sudo python setup.py install
-
 echo -en "\n-------------------------------------------------------\nInstall Derby\n\n" | tee -a $log
 cd $HOME
 git clone https://github.com/bbaumg/derby.git
