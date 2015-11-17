@@ -14,11 +14,11 @@ v_gitUser='Barrett'
 
 # OK, let's install all of the basic stuff and do the basline configurations
 sudo raspi-config
-echo -en "\n-------------------------------------------------------\napt-get update\n\n" | tee -a $log
-sudo apt-get dist-upgrade -y
-echo -en "\n-------------------------------------------------------\napt-get install\n\n" | tee -a $log
-sudo apt-get update -y
 echo -en "\n-------------------------------------------------------\napt-get dist-upgrade\n\n" | tee -a $log
+sudo apt-get dist-upgrade -y
+echo -en "\n-------------------------------------------------------\napt-get update\n\n" | tee -a $log
+sudo apt-get update -y
+echo -en "\n-------------------------------------------------------\napt-get install apps\n\n" | tee -a $log
 sudo apt-get install -y $v_defaultapps
 
 echo -en "\n-------------------------------------------------------\nAdding to .bashrc\n\n" | tee -a $log
