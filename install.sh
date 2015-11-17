@@ -20,9 +20,6 @@ echo -en "\n-------------------------------------------------------\napt-get ins
 sudo apt-get update -y
 echo -en "\n-------------------------------------------------------\napt-get dist-upgrade\n\n" | tee -a $log
 sudo apt-get install -y $v_defaultapps
-echo -en "\n-------------------------------------------------------\npip3.2 install\n\n" | tee -a $log
-sudo pip install pyephem pymysql configparser
-
 
 echo -en "\n-------------------------------------------------------\nAdding to .bashrc\n\n" | tee -a $log
 sed -i --follow-symlinks '/stuff/d' .bashrc
