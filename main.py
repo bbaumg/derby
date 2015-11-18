@@ -22,7 +22,7 @@ import signal
 import logging
 from datetime import datetime
 from Adafruit_LED_Backpack import SevenSegment
-from neopixel import *
+#from neopixel import *
 
 # Setup logging
 #logLevel = logging.CRITICAL
@@ -57,11 +57,11 @@ listPlacement = []                               # List holds placement
 
 
 # Indicator LED Configuration:  Addressable Pixels
-cstLEDCount   = 4       # Number of LED pixels.
-cstLEDPin     = 18      # GPIO pin connected to the pixels (must support PWM!).
-cstLEDFreqHZ  = 800000  # LED signal frequency in hertz (usually 800khz)
-cstLEDDMA     = 5       # DMA channel to use for generating signal (try 5)
-cstLEDInvert  = False   # True to invert the signal (when using NPN transistor level shift)
+#cstLEDCount   = 4       # Number of LED pixels.
+#cstLEDPin     = 18      # GPIO pin connected to the pixels (must support PWM!).
+#cstLEDFreqHZ  = 800000  # LED signal frequency in hertz (usually 800khz)
+#cstLEDDMA     = 5       # DMA channel to use for generating signal (try 5)
+#cstLEDInvert  = False   # True to invert the signal (when using NPN transistor level shift)
 
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -185,8 +185,8 @@ GPIO.add_event_detect(4, GPIO.RISING, callback=laneFinish, bouncetime=3000)
 GPIO.add_event_detect(27, GPIO.RISING, callback=raceStart, bouncetime=3000)
 outDispSetup()
 
-strip = Adafruit_NeoPixel(cstLEDCount, cstLEDPin, cstLEDFreqHZ, cstLEDDMA, cstLEDInvert)
-strip.begin()
+#strip = Adafruit_NeoPixel(cstLEDCount, cstLEDPin, cstLEDFreqHZ, cstLEDDMA, cstLEDInvert)
+#strip.begin()
 
 
 signal.signal(signal.SIGINT, signal_handler)
