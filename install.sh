@@ -20,6 +20,10 @@ echo -en "\n-------------------------------------------------------\napt-get upd
 sudo apt-get update -y
 echo -en "\n-------------------------------------------------------\napt-get install apps\n\n" | tee -a $log
 sudo apt-get install -y $v_defaultapps
+echo -en "\n-------------------------------------------------------\napt-get dist-upgrade again\n\n" | tee -a $log
+sudo apt-get dist-upgrade -y
+echo -en "\n-------------------------------------------------------\napt-get update again\n\n" | tee -a $log
+sudo apt-get update -y
 
 echo -en "\n-------------------------------------------------------\nAdding to .bashrc\n\n" | tee -a $log
 sed -i --follow-symlinks '/stuff/d' .bashrc
@@ -70,7 +74,7 @@ echo -en "\n\n"
 cat $rotatefile
 
 echo -en "\n-------------------------------------------------------\Download Derby\n\n" | tee -a $log
-cd $HOME
+cd /home/pi
 git clone https://github.com/bbaumg/derby.git
 
 echo -en "\n-------------------------------------------------------\Install Derby\n\n" | tee -a $log
