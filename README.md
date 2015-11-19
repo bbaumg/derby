@@ -1,6 +1,9 @@
 # Pinewood Derby Timer
 This pinewood derby timer is designed to work with a basic 4 lane wood track.  It is a simple python based application that with some Adafruit hardware.
 
+Hardware List:
+
+
 The install is fairily well packaged, and as of writing this (11/15/2015) the install works with the "2015-09-24-raspbian-jessie" build of Raspbian.
 
 To install...
@@ -22,3 +25,5 @@ sudo bash derby/install.sh
 ```
 
 At this point you should have a fully functioning pinewood derby timer that will start up on boot.
+
+
