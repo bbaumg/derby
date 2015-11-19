@@ -6,10 +6,10 @@ This pinewood derby timer is designed to work
 The Easy way to install:
 1  Start with a clean build of Raspian
 
-...bash
+```bash
 curl "https://raw.githubusercontent.com/bbaumg/derby/master/build.sh" > build.sh
 bash build.sh  #don't use sudo!!!
-...
+```
   1  raspi-config... will open
   2  Expand Filesystem
   3  Set international options for your local.
