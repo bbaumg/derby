@@ -20,10 +20,10 @@ from Adafruit_LED_Backpack import SevenSegment
 #from neopixel import *
 
 # Setup logging
-#logLevel = logging.CRITICAL
+logLevel = logging.CRITICAL
 #logLevel = logging.ERROR
 #logLevel = logging.WARNING
-logLevel = logging.INFO
+#logLevel = logging.INFO
 #logLevel = logging.DEBUG
 cstlogFile = '/var/controller/main.log'
 
