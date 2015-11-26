@@ -7,11 +7,6 @@
 #            rankings and completion time.  Built for pack 900
 #
 #  Hardware needed:
-#    1 = Raspberry Pi (I used a Pi 2)
-#    4 = Adafruit 0.56" 4-Digit 7-Segment Display w/I2C Backpack
-#    1 = Adafruit Perma-Proto HAT for Pi Mini Kit - No EEPROM
-#    4 = Phototransistors (I used OSRAM 720-SFH314)
-#    1 = 
 ####################################################################
 
 import RPi.GPIO as GPIO
