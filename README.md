@@ -2,9 +2,7 @@
 This pinewood derby timer is designed to work with a basic 4 lane wood track.  It is a simple python based application that with some Adafruit hardware.
 
 Hardware List:
-*   1 Raspberry pi with 1A power supply
-        The Pi 2 does work best.  However, the Pi Zero does a great job and cuts the cost.  
-        Pi Zero is direct plug n play from a functional running Pi 2.
+*   1 Raspberry pi with 1A power supply. (NOTE:  The Pi 2 does work best.  However, the Pi Zero does a great job and cuts the cost.  Pi Zero is direct plug n play from a functional running Pi 2.)
 *   4 Adafruit 0.56" 4-Digit 7-Segment Display w/I2C Backpack
 *   1 Adafruit Perma-Proto HAT for Pi Mini Kit - No EEPROM
 *   1 1k Ohm resistor
