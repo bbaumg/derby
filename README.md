@@ -5,7 +5,6 @@ Hardware List:
 *   1 Raspberry pi with 1A power supply. (NOTE:  The Pi 2 does work best.  However, the Pi Zero does a great job and cuts the cost.  Pi Zero is direct plug n play from a functional running Pi 2.)
 *   4 Adafruit 0.56" 4-Digit 7-Segment Display w/I2C Backpack
 *   1 Adafruit Perma-Proto HAT for Pi Mini Kit - No EEPROM
-*   1 1k Ohm resistor
 *   4 Phototransistor (I used:  OSRAM 720-SFH314)
 *   1 lever switch
 
